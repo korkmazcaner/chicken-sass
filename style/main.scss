@@ -1,0 +1,155 @@
+@import "component";
+@import "media-queries";
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 0 10px black ;
+
+    .logo {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .second {
+        display: flex;
+        gap: 20px;
+
+
+
+
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            gap: 20px;
+            align-items: center;
+            margin: 0;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        @include laptop {
+
+            & {
+                display: none;
+
+            }
+
+        }
+
+        
+
+    }
+    .bi {
+        color: black;
+        font-size: 25px;
+        display: none;
+
+        @include laptop {
+            display: inline-block;
+        }
+    }
+
+
+
+}
+
+#hero {
+    flex-grow: 1;
+    
+
+    .container {
+        display: flex;
+        align-items: center;
+        max-width: 1000px;
+
+        @include laptop {
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 25px;
+            
+        }
+
+        .first {
+
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: start;
+            width: 50%;
+
+            @include laptop{
+                width: auto;
+                
+                
+            }
+
+            h1 {
+                color: green;
+            }
+
+            h2 {
+                color: black;
+            }
+
+            h3 {
+                color: black;
+            }
+
+
+        }
+
+        .second {
+            width: 50%;
+            overflow: hidden;
+            @include laptop{
+                width: auto;
+
+            }
+
+
+            img {
+                width: 500px;
+
+            }
+        }
+    }
+
+
+}
+
+footer {
+    background-color: gainsboro;
+    padding: 5px 10px;
+
+    p {
+        text-align: center;
+        margin: 0;
+    }
+
+}

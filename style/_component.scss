@@ -1,0 +1,20 @@
+
+
+button{
+    background-color: seagreen;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 12px;
+    transition: all .5s;
+
+    
+
+    &:hover{
+        background-color: rgb(142, 7, 7);
+        transition: all .4s;
+
+    }
+}

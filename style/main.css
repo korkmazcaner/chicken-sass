@@ -1,0 +1,129 @@
+button {
+  background-color: seagreen;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 5px;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 12px;
+  transition: all 0.5s;
+}
+button:hover {
+  background-color: rgb(142, 7, 7);
+  transition: all 0.4s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins";
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 0 10px black;
+}
+nav .logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+nav .second {
+  display: flex;
+  gap: 20px;
+}
+nav .second ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  align-items: center;
+  margin: 0;
+}
+nav .second ul a {
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 1000px) {
+  nav .second {
+    display: none;
+  }
+}
+nav .bi {
+  color: black;
+  font-size: 25px;
+  display: none;
+}
+@media (max-width: 1000px) {
+  nav .bi {
+    display: inline-block;
+  }
+}
+
+#hero {
+  flex-grow: 1;
+}
+#hero .container {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+}
+@media (max-width: 1000px) {
+  #hero .container {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
+  }
+}
+#hero .container .first {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: start;
+  width: 50%;
+}
+@media (max-width: 1000px) {
+  #hero .container .first {
+    width: auto;
+  }
+}
+#hero .container .first h1 {
+  color: green;
+}
+#hero .container .first h2 {
+  color: black;
+}
+#hero .container .first h3 {
+  color: black;
+}
+#hero .container .second {
+  width: 50%;
+  overflow: hidden;
+}
+@media (max-width: 1000px) {
+  #hero .container .second {
+    width: auto;
+  }
+}
+#hero .container .second img {
+  width: 500px;
+}
+
+footer {
+  background-color: gainsboro;
+  padding: 5px 10px;
+}
+footer p {
+  text-align: center;
+  margin: 0;
+}/*# sourceMappingURL=main.css.map */
